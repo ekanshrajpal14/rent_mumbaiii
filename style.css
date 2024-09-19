@@ -316,9 +316,10 @@ section {
         letter-spacing: 10px;
         padding: 1rem 0;
         text-transform: capitalize;
-        font-size: 4rem;
+        font-size: 3.3rem;
         position: relative;
         color: var(--blue_content);
+        /* color: black; */
     }
 
     .line {
@@ -336,7 +337,7 @@ section {
     }
 
     .line2 {
-        bottom: 1%;
+        bottom: -3%;
     }
 }
 
@@ -347,7 +348,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(235, 235, 235, 0.452);
+    background-color: #fff;
     background-size: cover;
 }
 
@@ -457,15 +458,16 @@ section {
     h3 {
         font-size: 1.2vw;
         font-weight: 300;
-        color: var(--blue_content);
+        color: var(--yellow);
         text-transform: uppercase;
     }
 }
 
 .page_service {
     width: 100%;
-    height: 100vh;
+    height: auto;
     padding: 6vw 9vw;
+    padding-bottom: 0;
 
     .service_content {
         width: 100%;
@@ -474,9 +476,9 @@ section {
         justify-content: center;
         align-items: center;
 
-        p {
+        .para {
             font-size: 1.4vw;
-            width: 70%;
+            width: 80%;
             text-align: center;
             color: rgba(0, 28, 114, 0.727);
             line-height: 2vw;
@@ -485,22 +487,189 @@ section {
 
     }
 
-    .service_img {
-        width: 40%;
-        height: 100%;
-        background-size: cover;
-        background-position: center;
-        background-image: url(./images/service_img1.avif);
+}
+
+.cards_service {
+    width: 85%;
+    /* background-color: #c0c0c0; */
+    height: auto;
+    padding: 6vw 2vw;
+}
+
+.card_1_serve {
+    width: 100%;
+    height: auto;
+    /* background-color: #ccffed; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3vw 0vw;
+    position: relative;
+    gap: 3vw;
+    transition: all .4s;
+    border-top: 1.5px solid var(--blue_content);
+}
+
+.card_1_serve::before {
+    content: "";
+    width: 100%;
+    height: 0;
+    position: absolute;
+    top: 0;
+    transition: cubic-bezier(0.19, 1, 0.22, 1) .4s;
+    background-color: var(--blue_content);
+    opacity: .07;
+}
+
+.card_1_serve:hover:before {
+    height: 100%;
+}
+
+.box {
+    width: 110px;
+    height: 110px;
+    /* background-color: #fdc239; */
+    /* background-image: url(./images/rental-car.png); */
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+.box_keys {
+    background-image: url(./images/keys_img.avif);
+}
+
+.box_wed {
+    background-image: url(./images/wedding.webp);
+}
+
+.reverse_card {
+    flex-direction: row-reverse;
+}
+
+.box_chauf {
+    background-image: url(./images/chauff_image.avif);
+}
+
+.box_mumbai {
+    background-image: url(./images/mumbai_img.webp);
+}
+
+.content_serve {
+    width: 85%;
+    height: 150px;
+    /* background-color: #23ad00; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1vw;
+
+    h3 {
+        font-size: 1.5vw;
+        color: var(--blue_content);
+        font-weight: 600;
+    }
+
+    p {
+        color: var(--grey);
     }
 }
 
+.last_card {
+    border-bottom: 1.5px solid var(--blue_content);
+}
 
 
+/* collection pages */
+.page_collection {
+    width: 100%;
+    height: auto;
+    padding: 2vw;
+    background-color: #f5f5f5;
+}
 
+.collection {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.card_box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5vw;
+    
+    padding: 5vw 0vw 1vw 4vw;
+}
 
+.card {
+    width: 28vw;
+    height: auto;
+    padding: 1vw;
+    background-color: white;
+}
 
+.card_img {
+    width: 100%;
+    height: 30vh;
+    position: relative;
+}
+.card_img::before{
+    content: "";
+    width: 60%;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #CCCCCC;
+    z-index: 99;
+}
 
+.card_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.card_content {
+    height: auto;
+    padding: 1vw;
+    text-align: center;
+    h2{
+        font-size: 1.3vw;
+        color: black;
+    }
+    h3{
+        font-size: 1.2vw;
+        color: rgb(48, 48, 48);
+    }
+}
+
+.btns {
+    margin-top: 2.3vw;
+    margin-bottom: .4vw;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.book_now_btn{
+    padding: 1vw 2.5vw;
+    color: #6c6c6c;
+    border: 1px solid #CCCCCC;
+    transition: cubic-bezier(0.19, 1, 0.22, 1) .7s;
+}
+.book_now_btn:hover{
+    color: #fff;
+    background-color: #141414;
+}
 
 
 
