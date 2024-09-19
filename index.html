@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="main">
+        <nav>
+            <div class="navbar">
+                <div class="logo">
+                    <h1>logo</h1>
+                </div>
+                <div class="all_items">
+                    <div class="items">
+                        <div class="item"><a href="#home">Home</a></div>
+                        <div class="item"><a href="#aboutus">About Us</a></div>
+                        <div class="item"><a href="">Collections</a></div>
+                        <div class="item"><a href="#services">Services</a></div>
+                        <div class="item"><a href="#reviews">Reviews</a></div>
+                        <div class="item"><a href="#contact">Contact us</a></div>
+                    </div>
+                    <div class="whatsapp"><a href="" class="icon_wp"><i class="ri-whatsapp-line"></i>Book Now</a></div>
+                </div>
+            </div>
+        </nav>
+        <section id="home">
+            <div class="page1_home">
+                <div class="left_home">
+                    <div class="content">
+                        <h1>Luxury on Demand, Rent <br> and <span>Savor the Experience</span></h1>
+
+                        <p>Welcome to Rent Luxury Cars Mumbai. Book now and
+                            elevate your Mumbai journey with style and comfort.</p>
+                        <div class="btn">
+                            <a href="" class="book_now">Book Now</a>
+                            <a href="" class="exp_col">Explore our Collection</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="right_home">
+                    <div class="image_cont">
+
+                        <!-- <img src="images/home_car.png" alt=""> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="aboutus">
+            <div class="page_about">
+                <div class="about_content">
+                    <div class="text_wrap">
+                        <div class="line_wrappers">
+                            <div class="line line1"></div>   
+                            <h1>About Us</h1>
+                            <div class="line line2"></div>
+                        </div>
+                        <h3>Welcome To Rent Luxury Cars Mumbai </h3>
+
+                    <p>At Rent Luxury Car, we extend our luxury rental services for those special moments that deserve a grand entrance. Our
+                    offerings include Luxury Car Chauffeur, Supercar Chauffeur, Wedding Car Hire, Formal Car Hire, and Supercar Drive Days
+                    to add that extra sparkle to your memorable events. For your convenience, we deliver the prestige rental car right to
+                    your doorstep, event venue, or hotel anywhere in Mumbai. Planning a grand entrance straight from the airport? Our
+                    Airport Car Hire service ensures a stylish sports car awaits you as you step out of the terminal, ready to whisk you
+                    away in luxury.</p>
+                    </div>
+
+                </div>
+
+                <div class="page3_about">
+                    <div class="page3_design">
+                        <div class="page3_design_left page3_design_cmn ">
+                            <div class="polygon clip_path_hover1"></div>
+                            <div class="triangle clip_path_hover"></div>
+                        </div>
+                        <div class="page3_design_center page3_design_cmn">
+                            <div class="four_counters_div">
+                                <div class="counter_one_box">
+                                    <span>12+</span>
+                                    <h3>Years Experience</h3>
+                                </div>
+                                <div class="counter_one_box">
+                                    <span>30+</span>
+                                    <h3>Vehicles</h3>
+                                </div>
+                                <div class="counter_one_box">
+                                    <span>1K+</span>
+                                    <h3>Happy Customer</h3>
+                                </div>
+                                <div class="counter_one_box">
+                                    <span>10+</span>
+                                    <h3>Luxury Car Brands</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page3_design_right page3_design_cmn">
+                            <div class="polygonR clip_path_hover1"></div>
+                            <div class="triangleR clip_path_hover"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="page_service">
+                <div class="service_content">
+                    <div class="line_wrappers">
+                        <div class="line line1"></div>
+                        <h1>Services We Offer</h1>
+                        
+                        <div class="line line2"></div>
+                    </div>
+                    <p>We cater to all your luxury car rental needs, Be it for any Service or Brand.
+                    Explore what best suits you.</p>
+                    <div class="cards_service">
+                            
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <script>
+         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+    </script>
+
+</body>
+
+</html>
