@@ -99,6 +99,7 @@ p {
         background-color: var(--color-primary);
         width: 2.2rem;
         height: 2.2rem;
+        font-size: 1.5vw;
         display: flex;
         justify-content: center;
         align-items: center;

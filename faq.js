@@ -13,8 +13,8 @@ accordions.forEach((accordion, index) => {
             const ic = a.querySelector("#accordion-icon");
 
             c.style.height = i === index && !isOpen ? `${c.scrollHeight}px` : "0px";
-            ic.classList.toggle("ri-add-line", i !== index || !isOpen);
-            ic.classList.toggle("ri-subtract-fill", i === index && !isOpen);
+            // ic.classList.toggle("ri-add-line", i !== index || !isOpen);
+            ic.classList.toggle("ri-arrow-drop-up-line", i === index && !isOpen);
         });
     });
 });
