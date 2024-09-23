@@ -217,7 +217,7 @@ nav {
 /* end of animation */
 .icon_wp {
     padding: .5vw 1.5vw;
-    background-color: #23ad00;
+    background-color: #1ba650;
     font-size: 1.3vw;
     border-radius: 40px 0 40px 0;
     color: #ffff;
@@ -233,9 +233,9 @@ nav {
 }
 
 .icon_wp:hover {
-    background-color: #00c09a;
+    background-color: var(--yellow);
     color: #ffff;
-    border-bottom: 4px solid #ffffff;
+    border-bottom: 4px solid #1ba650;
 }
 
 /* page home */
@@ -264,7 +264,7 @@ section#home {
 }
 
 .left_home .content {
-    height: 40%;
+    height: 55%;
     width: auto;
 
     h1 {
@@ -272,6 +272,7 @@ section#home {
 
         font-weight: 600;
 
+        letter-spacing: 1px;
         span {
             font-family: "Raleway", sans-serif;
             color: #fdc239;
@@ -280,14 +281,15 @@ section#home {
     }
 
     p {
-        margin-top: 2vw;
+        margin-top: 3vw;
         font-size: 1.3vw;
+        line-height: 2.3vw;
         color: rgb(133, 133, 133);
     }
 
     .btn_tag {
 
-        margin-top: 6vw;
+        margin-top: 5vw;
 
     }
 
@@ -347,7 +349,8 @@ section#home {
     background-position: center;
     background-repeat: no-repeat;
     /* background-image: url(./images/home_car-removebg.png); */
-    background-image: url(./images/png_first_try.png);
+    /* background-image: url(./images/png_first_try.png); */
+    background-image: url(Untitled_design-removebg-preview.png);
 }
 
 .circle_big {
