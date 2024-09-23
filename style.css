@@ -29,6 +29,92 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
+
+.whatsapp_call_cont {
+    width: 5vw;
+    height: 8vw;
+    position: fixed;
+    bottom: 2%;
+    right: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    z-index: 99;
+}
+
+.whatsapp_call_cont {
+
+    .call_circle,
+    .call_circle1 {
+        width: 3.5vw;
+        height: 3.5vw;
+        font-size: 2vw;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+        background-color: #0065CB;
+        transition: all .3s;
+        position: relative;
+    }
+
+    .call_circle::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        display: block;
+        width: 60px;
+        height: 60px;
+        background-color: #0065CB;
+        border-radius: 50%;
+        -webkit-animation: pulse-border 1500ms ease-out infinite;
+        animation: pulse-border 1500ms ease-out infinite;
+    }
+
+    .call_circle1::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        display: block;
+        width: 60px;
+        height: 60px;
+        background-color: #1ba650;
+        border-radius: 50%;
+        -webkit-animation: pulse-border 1500ms ease-out infinite;
+        animation: pulse-border 1500ms ease-out infinite;
+    }
+
+    .call_circle1 {
+        background-color: #1ba650;
+    }
+
+    .call_circle:hover,
+    .call_circle1:hover {
+        background-color: var(--yellow);
+    }
+}
+
+@keyframes pulse-border {
+    0% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translatex(-50%) translateY(-50%) translateZ(0) scale(1.5);
+        opacity: 0;
+    }
+}
+
+
 a {
     text-decoration: none;
 
@@ -46,7 +132,7 @@ nav {
 }
 
 .navbar {
-    flex-wrap: nowrap !important ;
+    flex-wrap: nowrap !important;
     width: 100%;
     height: 10vh;
     display: flex;
@@ -264,7 +350,7 @@ section#home {
     background-image: url(./images/png_first_try.png);
 }
 
-.circle_big{
+.circle_big {
     width: 110%;
     height: 110%;
     border-radius: 100%;
@@ -274,17 +360,19 @@ section#home {
     left: -50%;
     z-index: -1;
 }
-.circle_small_1{
+
+.circle_small_1 {
     width: 50%;
     height: 50%;
     border-radius: 100%;
-    background-color: #ffbb7232 ;
+    background-color: #ffbb7232;
     position: absolute;
     top: -15%;
     right: -20%;
     z-index: -1;
 }
-.circle_small_2{
+
+.circle_small_2 {
     width: 80%;
     height: 80%;
     border-radius: 100%;
@@ -294,6 +382,7 @@ section#home {
     left: 20%;
     z-index: -1;
 }
+
 section {
     width: 100%;
     height: auto;
@@ -330,7 +419,8 @@ section {
         letter-spacing: 2px;
         /* text-decoration: underline; */
         color: var(--blue_content);
-        span{
+
+        span {
             color: var(--yellow);
         }
     }
@@ -644,7 +734,7 @@ section {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5vw;
-    
+
     padding: 5vw 0vw 1vw 4vw;
 }
 
@@ -660,7 +750,8 @@ section {
     height: 30vh;
     position: relative;
 }
-.card_img::before{
+
+.card_img::before {
     content: "";
     width: 60%;
     height: 1px;
@@ -683,11 +774,13 @@ section {
     height: auto;
     padding: 1vw;
     text-align: center;
-    h2{
+
+    h2 {
         font-size: 1.3vw;
         color: black;
     }
-    h3{
+
+    h3 {
         font-size: 1.2vw;
         color: rgb(48, 48, 48);
     }
@@ -700,13 +793,15 @@ section {
     display: flex;
     justify-content: space-between;
 }
-.book_now_btn{
+
+.book_now_btn {
     padding: 1vw 2.5vw;
     color: #6c6c6c;
     border: 1px solid #CCCCCC;
     transition: cubic-bezier(0.19, 1, 0.22, 1) .7s;
 }
-.book_now_btn:hover{
+
+.book_now_btn:hover {
     color: #fff;
     background-color: #141414;
 }
@@ -715,17 +810,18 @@ section {
 
 
 /* contact us */
-.contact_page{
-    padding: 2vw ;
+.contact_page {
+    padding: 2vw;
     padding-top: 4vw;
 }
-.contact_content{
+
+.contact_content {
     /* text-align: center; */
     width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -769,7 +865,7 @@ section {
 
 #parallaxinnertext>h2 {
     font-size: 2.5vw;
-    
+
     font-weight: 500;
     margin: 1vw 0px;
     color: whitesmoke;
