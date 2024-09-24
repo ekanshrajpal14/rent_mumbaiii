@@ -125,7 +125,6 @@ nav {
     top: 0;
     z-index: 999999;
     width: 100%;
-    /* background-color: #ffffff; */
     background: linear-gradient(to right, #ffffff, #fffde5);
     height: auto;
     border-bottom: 1px solid #c0c0c0;
@@ -245,53 +244,70 @@ section#home {
 }
 
 .page1_home {
-    clip-path: polygon(100% 0, 100% 100%, 84% 88%, 0 100%, 0 0);
+    /* clip-path: polygon(100% 0, 100% 100%, 84% 88%, 0 100%, 0 0); */
     background: linear-gradient(to right, #ffffff, #fffde5);
     width: 100%;
-    height: 100vh;
+    height: auto;
     display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
 }
 
 .left_home {
-    width: 50%;
-    height: 100%;
+    text-align: center;
+    width: 100%;
+    height: 30vh;
     display: flex;
     padding: 0 5vw;
-    /* background-color: azure; */
+    z-index: 1;
     position: relative;
-
-    align-items: center;
+    align-items: flex-end;
 }
 
 .left_home .content {
-    height: 55%;
-    width: auto;
+    width: 100%;
+    height: auto;
 
     h1 {
-        font-size: 2.8vw;
-
-        font-weight: 600;
+        font-size: 2.4vw;
+        font-weight: 800;
+        color: #2c2c2c;
 
         letter-spacing: 1px;
+        font-family: "Raleway", sans-serif;
+
         span {
-            font-family: "Raleway", sans-serif;
+
             color: #fdc239;
             font-weight: 800;
         }
     }
 
     p {
-        margin-top: 3vw;
+        margin-top: .5vw;
         font-size: 1.3vw;
-        line-height: 2.3vw;
-        color: rgb(133, 133, 133);
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(0, 20, 201);
     }
+}
 
-    .btn_tag {
 
-        margin-top: 5vw;
 
+
+.content_right_holder {
+    width: 70%;
+    height: 30vh;
+    text-align: center;
+
+    p {
+        font-size: 1.2vw;
     }
+}
+
+.btn_tag {
+
+    margin-top: 3vw;
 
 }
 
@@ -332,58 +348,80 @@ section#home {
 }
 
 .right_home {
-    width: 50%;
-    height: 100%;
+    width: 100%;
+    z-index: 1;
+    height: 100vh;
     display: flex;
+    padding-top: 2vw;
+    flex-direction: column;
     align-items: center;
     position: relative;
-    justify-content: center;
+    /* justify-content: center; */
     overflow: hidden;
 }
 
 .image_cont {
-    width: 100%;
-    height: 80%;
-    scale: 1.15;
+    width: 60vw;
+    height: 60vh;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     /* background-image: url(./images/home_car-removebg.png); */
     /* background-image: url(./images/png_first_try.png); */
-    background-image: url(Untitled_design-removebg-preview.png);
+    background-image: url(https://rentluxurycar.in/image/cars-new.png);
 }
 
 .circle_big {
-    width: 110%;
-    height: 110%;
+    width: 60vw;
+    height: 60vw;
     border-radius: 100%;
     background-color: #ffcbad29;
     position: absolute;
     top: 0;
-    left: -50%;
-    z-index: -1;
+    left: -20%;
+    /* z-index: 1; */
 }
 
-.circle_small_1 {
-    width: 50%;
-    height: 50%;
+.mini_circle {
+    width: 4vw;
+    height: 4vw;
     border-radius: 100%;
-    background-color: #ffbb7232;
+    background-color: #ffbb7218;
     position: absolute;
-    top: -15%;
-    right: -20%;
-    z-index: -1;
+   
+}
+.mini_circle1{
+    top: -24%;
+        right: -24%;
+}
+.mini_circle2{
+    bottom: -10%;
+    width: 2vw;
+    height: 2vw;
+        right: -10%;
+}
+
+
+.circle_small_1 {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 100%;
+    background-color: #ffbb7229;
+    position: absolute;
+    top: 15%;
+    right: 4%;
+    /* z-index: 1; */
 }
 
 .circle_small_2 {
-    width: 80%;
-    height: 80%;
+    width: 40vw;
+    height: 40vw;
     border-radius: 100%;
-    background-color: #fdb0922c;
+    background-color: #fdb09222;
     position: absolute;
-    bottom: -40%;
-    left: 20%;
-    z-index: -1;
+    bottom: -10%;
+    right: -10%;
+    /* z-index: -1; */
 }
 
 section {
@@ -533,7 +571,7 @@ section {
     height: 60%;
     background-size: cover;
     background-position: center;
-    background-image: url("./images/about_page_img5.avif");
+    background-image: url("./images/about_page_new_r1.avif");
     clip-path: polygon(63% 0, 96% 66%, 64% 99%, 0 100%, 0 0);
 }
 
@@ -542,10 +580,11 @@ section {
     height: 50%;
     position: absolute;
     top: 20%;
+    background-image: url("./images/about_page_new_r2.avif");
     left: 42.5%;
     background-size: cover;
-    background-position: center;
-    background-image: url("./images/about_page_img6.avif");
+    background-position: right;
+    /* background-image: url("./images/about_page_img6.avif"); */
     clip-path: polygon(100% 0, 0 0, 43% 90%);
 }
 
