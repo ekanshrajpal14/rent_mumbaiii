@@ -368,7 +368,7 @@ section#home {
     background-repeat: no-repeat;
     /* background-image: url(./images/home_car-removebg.png); */
     /* background-image: url(./images/png_first_try.png); */
-    background-image: url(https://rentluxurycar.in/image/cars-new.png);
+    background-image: url("./images/home_image_new.png");
 }
 
 .circle_big {
