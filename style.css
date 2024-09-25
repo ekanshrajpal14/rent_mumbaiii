@@ -136,8 +136,20 @@ nav {
     height: 10vh;
     display: flex;
     align-items: center;
-    padding: 2vw;
+    padding: 0 2vw;
     justify-content: space-between;
+}
+
+.logo {
+    width: 20%;
+    height: 90%;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+    }
 }
 
 .all_items {
@@ -236,6 +248,11 @@ nav {
     color: #ffff;
     border-bottom: 4px solid #1ba650;
 }
+
+.toggle_switch {
+    display: none;
+}
+
 
 /* page home */
 section#home {
@@ -366,8 +383,6 @@ section#home {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    /* background-image: url(./images/home_car-removebg.png); */
-    /* background-image: url(./images/png_first_try.png); */
     background-image: url("./images/home_image_new.png");
 }
 
@@ -379,7 +394,6 @@ section#home {
     position: absolute;
     top: 0;
     left: -20%;
-    /* z-index: 1; */
 }
 
 .mini_circle {
@@ -388,17 +402,19 @@ section#home {
     border-radius: 100%;
     background-color: #ffbb7218;
     position: absolute;
-   
+
 }
-.mini_circle1{
+
+.mini_circle1 {
     top: -24%;
-        right: -24%;
+    right: -24%;
 }
-.mini_circle2{
+
+.mini_circle2 {
     bottom: -10%;
     width: 2vw;
     height: 2vw;
-        right: -10%;
+    right: -10%;
 }
 
 
@@ -410,7 +426,6 @@ section#home {
     position: absolute;
     top: 15%;
     right: 4%;
-    /* z-index: 1; */
 }
 
 .circle_small_2 {
@@ -421,13 +436,11 @@ section#home {
     position: absolute;
     bottom: -10%;
     right: -10%;
-    /* z-index: -1; */
 }
 
 section {
     width: 100%;
     height: auto;
-    /*background: linear-gradient(to left, #ffffff, #cfffcc);*/
 }
 
 .page_about {
@@ -458,7 +471,6 @@ section {
         font-family: "Raleway", sans-serif;
         font-weight: 500;
         letter-spacing: 2px;
-        /* text-decoration: underline; */
         color: var(--blue_content);
 
         span {
@@ -468,7 +480,6 @@ section {
 
     p {
         font-family: "Raleway", sans-serif;
-        font-size: 1.2vw;
         line-height: 2vw;
         color: rgba(0, 28, 114, 0.727);
         text-align: center;
@@ -939,6 +950,10 @@ section {
     font-weight: 500;
     transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.8s;
     letter-spacing: 0.2px;
+
+    i {
+        margin-right: .3vw;
+    }
 }
 
 #parallaxinnertext>div>a:nth-child(2):hover {
@@ -975,27 +990,3 @@ section {
 
 
 
-
-/* resp  about*/
-
-@media screen and (max-width:600px) {
-
-    .page3_design_cmn {
-        width: 75%;
-    }
-
-    .page3_design {
-        flex-direction: column;
-    }
-
-    .counter_one_box {
-        span {
-            font-size: 6vw;
-        }
-
-        h3 {
-            font-size: 3vw;
-        }
-    }
-
-}
