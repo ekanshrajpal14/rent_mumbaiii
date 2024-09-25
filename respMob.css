@@ -331,7 +331,7 @@
     /* parallax part */
 
     #parallaxsection {
-        background: url('./images/parallax.jpg') repeat fixed 100%;
+        background: url('./images/maybach_new.avif') repeat fixed 100%;
         background-position: center;
         background-size: cover;
         display: flex;
